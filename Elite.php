@@ -435,7 +435,7 @@
                         </div>
                         </div>
                         <div class="submit">
-                           <button type="submit" class="btn btn-primary" id="form_sub">submit</button>
+                           <button type="submit" class="btn btn-primary" id="form_sub">submitt</button>
                         </div>
                     </div>
                 </div>
