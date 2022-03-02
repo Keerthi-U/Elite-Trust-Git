@@ -54,19 +54,19 @@
                             </div>  
                             <div class="dob col-md-12 col-lg-4 col-xl-4">
                                 <label for="d_o_admission">Date Of Birth</label>
-                                <input id="d_o_admission" class="form-control date" name="d_o_admission" placeholder="Select date...">
+                                <input id="d_o_admission" class="form-control date" name="dob" placeholder="Select date...">
                                  
                              </div>
                             <div class="gender col-lg-4">
                                 <label for="gender">Gender</label>
                                 <div class="row">
                                 <div class="custom-control custom-radio" id="gender">
-                                    <input type="radio" class="custom-control-input" id="stu_customRadio1" name="radio1" value="Male">
+                                    <input type="radio" class="custom-control-input" id="stu_customRadio1" name="gender" value="Male">
                                     <label class="custom-control-label" for="stu_customRadio1">Male</label>
                                 </div>
                     
                                 <div class="custom-control custom-radio female" id="gender">
-                                    <input type="radio" class="custom-control-input" id="stu_customRadio2" name="radio1" value="Female">
+                                    <input type="radio" class="custom-control-input" id="stu_customRadio2" name="gender" value="Female">
                                     <label class="custom-control-label" for="stu_customRadio2">Female</label>
                                 </div>
                                 </div>
@@ -102,16 +102,16 @@
                                     <label for="email">Email</label>
                                     <input id="email" type="text" class="form-control input-sm" name="email">
                                 </div> 
-
+                                <div class="place col-lg-6">
+                                    <label for="place">City</label>
+                                    <input id="place" type="text" class="form-control input-sm" name="city">
+                                </div> 
                                 <div class="district col-lg-6">
                                     <label for="district">District</label>
                                     <input id="district" type="text" class="form-control input-sm" name="district">
                                 </div>  
                                 
-                                <div class="place col-lg-6">
-                                    <label for="place">Place</label>
-                                    <input id="place" type="text" class="form-control input-sm" name="place">
-                                </div>  
+                            
                                 
                                 <div class="state col-lg-6">
                                     <label for="state">State</label>
@@ -136,7 +136,7 @@
                           
                                     <div class="h_admitted col-lg-4">
                                         <label for="h_admitted">Name of School/ College</label>
-                                        <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                        <input id="h_admitted" type="text" class="form-control input-sm" name="n">
                                     </div> 
                                     <div class="h_admitted col-lg-4">
                                         <label for="h_admitted">Enrollment/Register Number</label>
@@ -206,11 +206,11 @@
                              
                                 <div class="a_number col-lg-4">
                                     <label for="a_number">Account Number</label>
-                                    <input id="a_number" type="number" class="form-control" name="a_number">
+                                    <input id="a_number" type="number" class="form-control" name="account_number">
                                 </div>
                                 <div class="n_o_bank col-lg-4">
                                     <label for="n_o_bank">Name Of Bank</label>
-                                    <input id="n_o_bank" type="text" class="form-control" name="n_o_bank">
+                                    <input id="n_o_bank" type="text" class="form-control" name="name_o_bank">
                                 </div>   
                                 <div class="ifsc_code col-lg-4">
                                     <label for="ifsc_code">IFSC Code</label>
@@ -221,11 +221,11 @@
                             <div class="row">
                                 <div class="aa_number col-lg-4">
                                     <label for="aa_number">Aadhar Number</label>
-                                    <input id="aa_number" type="number" class="form-control" name="aa_number">
+                                    <input id="aa_number" type="number" class="form-control" name="aadhar_number">
                                 </div>  
                                  <div class="form-group col-lg-4">
                                     <label for="exampleFormControlFile1">Attachement</label>
-                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    <input type="file" class="form-control-file" name="attachment" id="exampleFormControlFile1">
                                   </div>
                             
                             </div>
@@ -245,11 +245,11 @@
                         <div class="row">
                             <div class="h_admitted col-lg-4">
                                 <label for="h_admitted">Name Of Hospital Admitted</label>
-                                <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                <input id="h_admitted" type="text" class="form-control input-sm" name="name_o_hospital">
                             </div>  
                             <div class="t_o_disease col-lg-4">
                                 <label for="t_o_disease">Type Of Disease</label>
-                                <select class="custom-select" id="t_o_disease" name="select">
+                                <select class="custom-select" id="t_o_disease" name="disease_select">
                                     <option value="expert">Affected by...</option>
                                     <option value="1">Injury</option>
                                     <option value="2">Maternity</option>
@@ -258,11 +258,11 @@
                             </div> 
                             <div class="n_o_disease col-lg-4">
                                 <label for="n_o_disease">Name Of Disease</label>
-                                <input id="n_o_disease" type="text" class="form-control input-sm" name="n_o_disease">
+                                <input id="n_o_disease" type="text" class="form-control input-sm" name="name_o_disease">
                             </div>  
                           <div class="t_o_disease col-lg-4">
                                 <label for="t_o_disease">Severity Of Disease</label>
-                                <select class="custom-select" id="t_o_disease" name="select">
+                                <select class="custom-select" id="t_o_disease" name="severity_o_select">
                                     <option value="expert">Please select ...</option>
                                     <option value="1">Minor</option>
                                     <option value="2">Moderate</option>
@@ -285,11 +285,11 @@
                             </div> 
                             <div class="form-group col-lg-4">
                                 <label for="exampleFormControlFile1"> Hospital Report/Recommendation letter </label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <input type="file" class="form-control-file" name="hosital-report" id="exampleFormControlFile1">
                             </div> 
                             <div class="form-group col-lg-4">
                                 <label for="exampleFormControlFile1">Pervious Medical Report</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <input type="file" class="form-control-file" name="perious_medical_report" id="exampleFormControlFile1">
                             </div> 
                         </div>
                          <div class="orphan col-lg-12">
@@ -310,12 +310,12 @@
                                 <div class="row orphan_1">
                                     <div class="a_expense col-lg-4">
                                         <label for="a_expense">Goverment</label>
-                                        <input id="a_expense" type="text" class="form-control" name="a_expense" placeholder=" Enter Insurance Id">
+                                        <input id="a_expense" type="text" class="form-control" name="orphan_g_p" placeholder=" Enter Insurance Id">
                                     </div> 
                     
                                     <div class="a_expense col-lg-4">
                                         <label for="a_expense">Private</label>
-                                        <input id="a_expense" type="text" class="form-control" name="a_expense" placeholder=" Enter Insurance Id">
+                                        <input id="a_expense" type="text" class="form-control"  name="orphan_g_p" placeholder=" Enter Insurance Id">
                                     </div> 
                             </div>
 
@@ -435,24 +435,43 @@
                         </div>
                         </div>
                         <div class="submit">
-                           <button type="submit" class="btn btn-primary">submit</button>
+                           <button type="submit" class="btn btn-primary" id="form_sub">submit</button>
                         </div>
                     </div>
                 </div>
             </form>
-      
-</div>
-  </div>
+         </div>
+     </div>
+     <script src="student application.js"></script>
+     <script>
+         $(document).ready(function (){
 
-          
+            $('#form_sub').click(function(event){
+            event.preventDefault();
+            alert('ok');
+            var file_image = $('#user_image').prop('files')[0];
+            alert(file_image);
+            var formdata =new FormData(document.getElementById('subform'));
+            formdata.append('file',file_image);
+            alert(formdata);
+            
+            $.ajax({
+            url: 'insert.php',
+            data: formdata,
+            processData: false,
+            contentType: false,
+            type: 'POST',
+            success: function(data){
+                alert(data);
+            }
+            });
+            
 
+            
+            });
+            });
 
-
-      
-         
-       
-        <!-- <script src="dummymedical.js"></script> -->
-        <script src="student application.js"></script>
+    </script>
   
 </body>
 </html>

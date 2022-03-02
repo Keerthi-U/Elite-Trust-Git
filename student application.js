@@ -214,15 +214,23 @@ var index = 0;
         $(this).datepicker();
 
        });
+       $('#customRadio5').click(function(){
+        $('#in_yes').slideDown();
+        });
+       $('#customRadio6').click(function(){
+        $('#in_yes').slideUp(1000);
+        });
 
        $(".date").datepicker({
         format: "dd-mm-yyyy",
       });
     });
 
+    // select script
+
     $("#md_toggle5").hide();
 
-
+  
     $('#flip').change(function(){
         alert('hi');
           alert($(this).val());
